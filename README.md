@@ -80,10 +80,10 @@ I learned how to implement responsive images via the picture tag with srcset and
 
 ## Author
 
-- Website - [](www.sergioswork.com)
+- Website - [](https://www.sergioswork.com)
 - Frontend Mentor - [@sergioreynoso](https://www.frontendmentor.io/profile/sergioreynoso)
 - LinkedIn - [@sreynoso](https://www.linkedin.com/in/sreynoso/)
 
 ## Acknowledgments
 
-I would like to thank [Jonas Schmedtmann](https://codingheroes.io) for all his great [Demy courses](https://www.udemy.com/user/jonasschmedtmann/), as well as [Kevin Powell](https://www.kevinpowell.co) for all the great css content.
+I would like to thank [Jonas Schmedtmann](https://codingheroes.io) for all his great [UDemy courses](https://www.udemy.com/user/jonasschmedtmann/), as well as [Kevin Powell](https://www.kevinpowell.co) for all the great css content.
