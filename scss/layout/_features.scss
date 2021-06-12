@@ -1,0 +1,60 @@
+@use 'base/colors' as clr;
+@use 'utils/variables' as var;
+@use 'utils/mixins' as mix;
+
+.features {
+  padding-top: 10.5rem;
+  padding-bottom: 8rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.9375rem, 1fr));
+  grid-column-gap: 1.875rem;
+  grid-row-gap: 4.5rem;
+
+  @include mix.respond(tablet) {
+    padding-top: 8.875rem;
+    padding-bottom: 8.875rem;
+  }
+
+  @include mix.respond(mobile) {
+    padding-top: 4.6875rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.feature {
+  @include mix.respond(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 4.0625rem;
+    height: 4.0625rem;
+    margin-bottom: 3rem;
+    background-color: clr.$color-primary-500;
+    border-radius: var.$round-corner-300;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    width: 80%;
+    margin-bottom: 1.5rem;
+
+    @include mix.respond(mobile) {
+      text-align: center;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 1.5rem;
+
+    @include mix.respond(mobile) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use 'base/colors' as clr;
+@use 'utils/variables' as var;
+@use 'utils/mixins' as mix;
+
+.navbar {
+  margin-bottom: 5.1875rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include mix.respond(mobile) {
+    margin-bottom: 4rem;
+  }
+
+  &__logo {
+    display: inline-block;
+    justify-self: start;
+  }
+
+  &__btn {
+    justify-self: end;
+  }
+}

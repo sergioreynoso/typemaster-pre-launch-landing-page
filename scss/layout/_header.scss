@@ -1,0 +1,91 @@
+@use 'base/colors' as clr;
+@use 'utils/variables' as var;
+@use 'utils/mixins' as mix;
+
+.header {
+  width: 100%;
+  margin-bottom: 1.875rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: min-content minmax(15rem, 1fr) 1fr;
+  grid-template-rows: 1.5fr min-content min-content 1fr;
+  grid-row-gap: 1.5rem;
+
+  @include mix.respond(mobile) {
+    margin-bottom: 1.5rem;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(3, min-content) 24.6875rem;
+  }
+
+  &__heading {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+  }
+
+  &__paragraph {
+    grid-column: 1 / 3;
+    width: 74%;
+
+    @include mix.respond(mobile) {
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: start;
+  }
+
+  &__release-date {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    margin-left: 2.5rem;
+
+    @include mix.respond(mobile) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__img {
+    width: 33.75rem;
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+
+    border-radius: var.$round-corner-500;
+    overflow: hidden;
+
+    @include mix.respond(tablet) {
+      width: 29.875rem;
+    }
+
+    @include mix.respond(mobile) {
+      // width: 25rem;
+      width: 107%;
+      height: 20.6875rem;
+      grid-column: 1 / -1;
+      grid-row: 4 / -1;
+      align-self: end;
+      border-radius: var.$round-corner-500 0 0 var.$round-corner-500;
+    }
+  }
+
+  //Square design element with rounded corners
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -17.8125rem;
+    width: 15.9375rem;
+    height: 15rem;
+    background-color: clr.$color-neutral-100;
+    border-radius: var.$round-corner-500;
+
+    @include mix.respond(tablet) {
+      display: none;
+    }
+  }
+}

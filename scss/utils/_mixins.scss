@@ -1,0 +1,24 @@
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+  //Screen size of 500px
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 37.5rem) {
+      @content;
+    }
+  }
+
+  //Screen size of 768px
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  //Screen size of 1440px
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 90em) {
+      @content;
+    }
+  }
+}

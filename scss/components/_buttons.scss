@@ -1,0 +1,37 @@
+@use "base/colors" as clr;
+@use 'utils/variables' as var;
+@use 'utils/mixins' as mix;
+
+.btn {
+  display: block;
+  text-decoration: none;
+  width: max-content;
+  padding: 1rem 1.6875rem;
+  color: clr.$color-neutral-50;
+  border-radius: var.$round-corner-100;
+  transition: background-color 0.2s, color 0.2s;
+
+  @include mix.respond(mobile) {
+    padding: 0.6875rem 0.90625rem;
+  }
+
+  &__primary {
+    background-color: clr.$color-primary-500;
+
+    &:hover,
+    &:active {
+      background-color: clr.$color-primary-300;
+    }
+  }
+
+  &__secondary {
+    color: clr.$color-secondary-500;
+    background-color: clr.$color-neutral-100;
+
+    &:hover,
+    &:active {
+      color: clr.$color-neutral-50;
+      background-color: clr.$color-secondary-500;
+    }
+  }
+}

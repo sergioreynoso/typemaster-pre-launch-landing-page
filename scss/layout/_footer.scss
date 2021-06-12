@@ -1,0 +1,13 @@
+@use 'base/colors' as clr;
+@use 'utils/variables' as var;
+@use 'utils/mixins' as mix;
+
+.footer {
+  padding: 0 0 2.4375rem;
+  display: flex;
+  justify-content: center;
+
+  & p span {
+    font-weight: bold;
+  }
+}
