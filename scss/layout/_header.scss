@@ -8,13 +8,13 @@
   position: relative;
 
   display: grid;
-  grid-template-columns: min-content minmax(15rem, 1fr) 1fr;
+  grid-template-columns: max-content minmax(15rem, 1fr) 1fr;
   grid-template-rows: 1.5fr min-content min-content 1fr;
   grid-row-gap: 1.5rem;
 
   @include mix.respond(mobile) {
     margin-bottom: 1.5rem;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: max-content 1fr;
     grid-template-rows: repeat(3, min-content) 24.6875rem;
   }
 
