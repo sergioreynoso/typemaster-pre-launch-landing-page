@@ -27,9 +27,9 @@ Users should be able to:
 
 ![Desktop](assets/screenshots/desktop.jpeg)
 
-![Mobile](assets/screenshots/mobile.jpeg){:height="50%" width="50%"}
+<!-- ![Mobile](assets/screenshots/mobile.jpeg){:height="50%" width="50%"} -->
 
-<!-- ![Mobile](<img src="assets/screenshots/mobile.jpeg" width="375px">) -->
+![Mobile](<img src="assets/screenshots/mobile.jpeg" width="50%">)
 
 ### Links
 
