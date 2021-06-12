@@ -26,11 +26,14 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](assets/screenshots/desktop.jpeg)
-![Mobile](assets/screenshots/mobile.jpeg)
+
+<!-- ![Mobile](assets/screenshots/mobile.jpeg) -->
+
+![Mobile](<img src="assets/screenshots/mobile.jpeg" width="375px">)
 
 ### Links
 
-<!-- - Solution URL: [Solution](https://www.frontendmentor.io/solutions/sass-bem-and-parcel-bundler-Jnwxf4H3t) -->
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/scss-bem-71-pattern-grids-flexbox-and-parcel-bundler-JQHgS3zGV)
 
 - Live Site URL: [Live Site](https://infallible-varahamihira-5e1530.netlify.app)
 
