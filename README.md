@@ -80,7 +80,7 @@ I learned how to implement responsive images via the picture tag with srcset and
 
 ## Author
 
-- Website - [](https://www.sergioswork.com)
+- Website - [www.sergioswork.com](https://www.sergioswork.com)
 - Frontend Mentor - [@sergioreynoso](https://www.frontendmentor.io/profile/sergioreynoso)
 - LinkedIn - [@sreynoso](https://www.linkedin.com/in/sreynoso/)
 
