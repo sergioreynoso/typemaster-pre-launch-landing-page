@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./assets/screenshots/desktop.jpeg)
-<img src="./assets/screenshots/mobile.jpeg" width="375" />
+![Desktop](./src/assets/screenshots/desktop.jpeg)
+<img src="./src/assets/screenshots/mobile.jpeg" width="375" />
 
 ### Links
 
